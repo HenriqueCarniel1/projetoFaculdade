@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.login {
+    position: relative;
+    z-index: 1;
+}
+.header-menu {
+    background-color: rgb(76, 119, 198);
+    padding: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.imglogo {
+    width: 100px;
+    height: 100px;
+}
+.navbar {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+#busca {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border: white;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.pesquisa {
+    display: flex;
+    width: 30%;
+    align-items: center;
+
+}
+
+.botaoHeader {
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    margin-top: 1, 5px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(76, 119, 198);
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li {
+    display: flex;
+    align-items: self-start;
+
+}
+
+.menu ul li i {
+    margin: 2px;
+}
+
+.login i {
+    display: flex;
+    align-items: self-start;
+    text-align: center;
+}
+
+.carrinho i {
+    display: flex;
+    align-items: self-start;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        display: none;
+    }   
+
+    .P-login{
+        display: none;
+        padding: 10px;
+    }
+
+    .P-carrinho{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .Main-bar{
+        display: none;
+    }
+}
