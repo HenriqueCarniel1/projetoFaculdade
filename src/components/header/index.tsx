@@ -48,6 +48,7 @@ let Header = () => {
         <div>
             <header className="header-menu">
                 <div className="navbar">
+                    
                     <div className="logo">
                         <img src="" alt="" className="imglogo" />
                     </div>
