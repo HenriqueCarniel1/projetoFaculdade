@@ -1,4 +1,4 @@
-import "./style.css"
+import "./style.css";
 import axios from "axios";
 import React, { useState, FormEvent } from "react";
 import "./style.css";
