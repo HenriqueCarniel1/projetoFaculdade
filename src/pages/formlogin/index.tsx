@@ -66,12 +66,14 @@ function FormLogin() {
 
     try {
       // Enviar os dados para o backend
-      const response = await axios.post("/login", {
+      const response = await axios.post("https://api-projetofaculdade.onrender.com/send/login/user", {
         LoginEmail: formState.email,
         LoginPassword: formState.password
       });
 
-      console.log(response)
+      // if(response) {
+      //   window.location.href = "/";
+      // }
 
       // Definir mensagem de sucesso
       setFormState((prevState) => ({
@@ -130,7 +132,7 @@ function FormLogin() {
             </p>
           </div>
           <div id="mensagem-certo">
-            <p style={{ color: 'red' }}>{formState.message}</p>
+            <p style={{ color: 'green' }}>{formState.message}</p>
           </div>
           <div id="criarconta-div-input">
             <a href='/formcreatelogin'>Criar conta</a>
