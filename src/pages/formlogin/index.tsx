@@ -129,14 +129,14 @@ function FormLogin() {
               {formState.passwordError}
             </p>
           </div>
+          <div id="mensagem-certo">
+            <p style={{ color: 'green' }}>{formState.message}</p>
+          </div>
           <div id="criarconta-div-input">
             <a href='/formcreatelogin'>Criar conta</a>
           </div>
           <div id="botao-div">
             <button type="submit" id="botao">Enviar</button>
-          </div>
-          <div id="mensagem-certo">
-            <p style={{ color: 'green' }}>{formState.message}</p>
           </div>
         </form>
       </div>
