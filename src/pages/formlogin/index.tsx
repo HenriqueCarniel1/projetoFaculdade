@@ -130,7 +130,7 @@ function FormLogin() {
             </p>
           </div>
           <div id="mensagem-certo">
-            <p style={{ color: 'green' }}>{formState.message}</p>
+            <p style={{ color: 'red' }}>{formState.message}</p>
           </div>
           <div id="criarconta-div-input">
             <a href='/formcreatelogin'>Criar conta</a>

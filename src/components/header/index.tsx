@@ -57,15 +57,17 @@ let Header = () => {
                         <button className="botaoHeader" ><i><BiSearchAlt2 /></i></button>
                     </div>
 
-                    <div className="login"  onMouseOver={HandleMouseOpen} onMouseOut={HandlleMouseOff}>
+                    <div className="login" onMouseOver={HandleMouseOpen} onMouseOut={HandlleMouseOff}>
                         <i><RiAccountPinCircleFill /><p className="P-login">Login</p></i>
                         {
-                            OpenLogin && <Login on={HandleMouseOpen} off={HandlleMouseOff}/>
+                            OpenLogin && <Login on={HandleMouseOpen} off={HandlleMouseOff} />
                         }
                     </div>
 
                     <div className="carrinho">
-                        <i><FaShoppingCart /><p className="P-carrinho">Carrinho</p></i>
+                        <a href="/carrinho">
+                            <i><FaShoppingCart /><p className="P-carrinho">Carrinho</p></i>
+                        </a>
                     </div>
 
                     <div className="Main-bar" onClick={abrirNav}>
