@@ -1,7 +1,7 @@
 import './style.css'
-import { MdLocalOffer } from 'react-icons/md'
-import { BiSolidOffer } from 'react-icons/bi'
-import { GiLaurelsTrophy } from 'react-icons/gi'
+import { MdLocalOffer } from 'react-icons/md';
+import { BiSolidOffer } from 'react-icons/bi';
+import { GiLaurelsTrophy } from 'react-icons/gi';
 
 let Mainbar = () => {
     return (
