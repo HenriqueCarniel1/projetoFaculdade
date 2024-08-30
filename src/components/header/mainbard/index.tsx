@@ -10,6 +10,7 @@ let Mainbar = () => {
                 <li><i><MdLocalOffer /></i>Ofertas</li>
                 <li><i><GiLaurelsTrophy /></i>Mais Vendidos</li>
                 <li><i><BiSolidOffer /></i>Cupons</li>
+                lasdpkgpkfdkpgsdhgkdgshk
             </ul>
         </div>
     )
