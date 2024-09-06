@@ -1,9 +1,12 @@
-function Carrinho () {
-    return (
+import Header from "../../components/header";
+
+function Carrinho() {
+    return ( 
         <div>
-            fdsijhgoshdfgohdxfsklgb
+            {/* Vinicius o HTML do carrinho fica isso */}
+        <Header/>
         </div>
-    )
+     );
 }
 
 export default Carrinho;
