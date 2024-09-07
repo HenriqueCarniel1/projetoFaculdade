@@ -10,11 +10,11 @@ import { MdLocalOffer } from 'react-icons/md'
 import { BiSolidOffer } from 'react-icons/bi'
 import { GiLaurelsTrophy } from 'react-icons/gi'
 //imports states
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 //import components
-import Mainbar from "./mainbard";
-import Login from "./login";
+import MenuDeOfertas from "./menuofertas";
+import LinkLogin from "./linklogin";
 
 interface Tipagem {
     Open: boolean
@@ -48,6 +48,7 @@ let Header = () => {
         <div>
             <header className="header-menu">
                 <div className="navbar">
+                    
                     <div className="logo">
                         <img src="" alt="" className="imglogo" />
                     </div>
@@ -57,15 +58,17 @@ let Header = () => {
                         <button className="botaoHeader" ><i><BiSearchAlt2 /></i></button>
                     </div>
 
-                    <div className="login"  onMouseOver={HandleMouseOpen} onMouseOut={HandlleMouseOff}>
+                    <div className="login" onMouseOver={HandleMouseOpen} onMouseOut={HandlleMouseOff}>
                         <i><RiAccountPinCircleFill /><p className="P-login">Login</p></i>
                         {
-                            OpenLogin && <Login on={HandleMouseOpen} off={HandlleMouseOff}/>
+                            OpenLogin && <LinkLogin on={HandleMouseOpen} off={HandlleMouseOff} />
                         }
                     </div>
 
                     <div className="carrinho">
-                        <i><FaShoppingCart /><p className="P-carrinho">Carrinho</p></i>
+                        <a href="/carrinho">
+                            <i><FaShoppingCart /><p className="P-carrinho">Carrinho</p></i>
+                        </a>
                     </div>
 
                     <div className="Main-bar" onClick={abrirNav}>
@@ -84,7 +87,7 @@ let Header = () => {
             </header>
             {
                 open &&
-                <Mainbar />
+                <MenuDeOfertas />
             }
         </div>
     )

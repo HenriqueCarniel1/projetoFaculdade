@@ -1,10 +1,11 @@
-import Header from "../../components/header";
+import './style.css'
+
 
 function Carrinho() {
     return ( 
         <div>
             {/* Vinicius o HTML do carrinho fica isso */}
-        <Header/>
+
         </div>
      );
 }
