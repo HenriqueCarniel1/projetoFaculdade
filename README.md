@@ -26,13 +26,13 @@ O Econobusca combina a acessibilidade do **GetNinjas** com a especialização da
 
 - **Tecnologias**: React Native, TypeScript
 - **GitHub**: Será disponibilizado na próxima sprint
-- **Figma**: [Clique aqui](https://www.figma.com/file/dd3whEP3)
+- **Figma**: [Clique aqui](https://www.figma.com/proto/eQqZ1iKfYeg6Q6GRKXvxs3/Untitled?node-id=236-65&node-type=FRAME&t=zHXyDM2ZRTMCRoMO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A107)
 
 ### Web
 
 - **Tecnologias**: ReactJS, TypeScript
 - **GitHub**: [Clique aqui](https://github.com/HenriqueCarniell/Econobusca-Web)
-- **Figma**: [Clique aqui](https://www.figma.com/file/db_NRW9f)
+- **Figma**: [Clique aqui](https://www.figma.com/proto/eQqZ1iKfYeg6Q6GRKXvxs3/Untitled?node-id=9-107&node-type=CANVAS&t=lzWKkOWByfnmu8AM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A107)
 
 ### Backend
 
