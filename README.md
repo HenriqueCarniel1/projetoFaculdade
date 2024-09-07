@@ -1,46 +1,110 @@
-# Getting Started with Create React App
+# 🚀 Econobusca: Conectando Comerciantes Locais a Clientes 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto
 
-## Available Scripts
+O **Econobusca** é um projeto inovador desenvolvido como parte de um trabalho de faculdade. O objetivo é conectar comerciantes locais a clientes que buscam serviços de reparo, produtos tecnológicos ou reciclados, oferecendo flexibilidade para que os usuários possam definir seus próprios orçamentos e encontrar as melhores opções disponíveis.
 
-In the project directory, you can run:
+## 🌟 Diferenciais do Projeto
 
-### `npm start`
+O Econobusca combina a acessibilidade do **GetNinjas** com a especialização da **Kabum**, servindo como uma ponte entre comerciantes que oferecem produtos reciclados ou recondicionados e consumidores de baixa renda que buscam opções acessíveis e sustentáveis.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🎯 Proposta de Valor
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Para Leigos**: Facilita a busca por produtos, considerando preço, qualidade e confiabilidade.
+- **Para Pessoas de Baixa Renda**: Conecta consumidores com orçamento limitado a produtos reciclados e acessíveis, promovendo a economia circular e a sustentabilidade.
 
-### `npm test`
+## 🔧 Como Funciona
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. O usuário busca o produto ou serviço desejado.
+2. A plataforma encontra as melhores opções, levando em conta o preço, a qualidade e o prazo de entrega.
+3. São exibidas opções de produtos reciclados ou recondicionados, quando disponíveis.
+4. O usuário realiza a compra diretamente na plataforma, com segurança e suporte garantido.
 
-### `npm run build`
+## 🖥️ Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Mobile
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Tecnologias**: React Native, TypeScript
+- **GitHub**: Será disponibilizado na próxima sprint
+- **Figma**: [Clique aqui](https://www.figma.com/file/dd3whEP3)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Web
 
-### `npm run eject`
+- **Tecnologias**: ReactJS, TypeScript
+- **GitHub**: [Clique aqui](https://github.com/HenriqueCarniell/Econobusca-Web)
+- **Figma**: [Clique aqui](https://www.figma.com/file/db_NRW9f)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Backend
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Tecnologias**: Node.js, Express, MySQL
+- **GitHub**: [Clique aqui](https://github.com/HenriqueCarniell/Econobusca-Backend)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Segurança**: Implementação robusta com tokens de autenticação de usuários e criptografia de senhas, garantindo privacidade e integridade dos dados.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🏗️ Arquitetura e Metodologia
 
-## Learn More
+### Arquitetura em Três Camadas:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Frontend**: Interface com o usuário construída com React Native e ReactJS.
+- **Backend**: Gerenciamento da lógica de negócios e controle de rotas utilizando Node.js e Express.
+- **Banco de Dados**: MySQL para a persistência de dados, com foco em segurança e escalabilidade.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Metodologia Ágil:
+
+- **SCRUM**: Adotamos uma abordagem ágil, com entregas iterativas e incrementais.
+- **Kanban**: Utilizamos o Kanban para organizar e priorizar tarefas, otimizando o fluxo de trabalho.
+
+## 🌍 Impacto do Econobusca
+
+O **Econobusca** tem o potencial de transformar o mercado local, oferecendo uma plataforma acessível e sustentável que apoia a economia circular. Através da conexão entre comerciantes locais e consumidores com restrições orçamentárias, o projeto promove a reutilização de produtos e a sustentabilidade.
+
+## 👥 Equipe
+
+- **Luccas Gabriel**
+- **Samuel Alves**
+- **Vinícius Vasconcelos**
+- **Gabriel Silva**
+
+---
+
+## 📂 Como Executar o Projeto
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
+- [MySQL](https://www.mysql.com/)
+
+### Passos para rodar o projeto:
+
+1. Clone este repositório:
+
+```bash
+https://github.com/HenriqueCarniel1/projetoFaculdade.git
+```
+
+2. Instale as dependências do projeto:
+
+```bash
+npm install
+```
+
+3. Execute o servidor local:
+
+```bash
+npm start
+```
+
+4. Acesse a aplicação em:
+
+```
+http://localhost:3000
+```
+
+## 📚 Documentação
+
+- [Documentação do Backend](https://github.com/HenriqueCarniell/Econobusca-Backend)
+- [Figma Mobile](https://www.figma.com/file/dd3whEP3)
+- [Figma Web](https://www.figma.com/file/db_NRW9f)
+
+---
