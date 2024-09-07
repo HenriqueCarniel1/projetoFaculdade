@@ -9,4 +9,4 @@ function FormCreate() {
     )
 }
 
-export default FormCreate
+export default FormCreate;

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //pages
 import FormLogin from "./pages/formlogin";
-import Header from "./components/header";
+import Home from "./pages/Home";
 import Carrinho from "./pages/carrinho";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<FormLogin/>} />
-        <Route path="/" element={<Header/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/carrinho" element={<Carrinho/>} />
       </Routes>
     </BrowserRouter>
