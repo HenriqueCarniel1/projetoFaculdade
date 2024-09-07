@@ -3,7 +3,7 @@ import { MdLocalOffer } from 'react-icons/md';
 import { BiSolidOffer } from 'react-icons/bi';
 import { GiLaurelsTrophy } from 'react-icons/gi';
 
-let Mainbar = () => {
+let MenuDeOfertas = () => {
     return (
         <div className="list-content">
             <ul>
@@ -15,4 +15,4 @@ let Mainbar = () => {
     )
 }
 
-export default Mainbar;
+export default MenuDeOfertas;

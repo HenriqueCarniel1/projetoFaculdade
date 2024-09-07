@@ -71,9 +71,7 @@ function FormLogin() {
         LoginPassword: formState.password
       });
 
-      // if(response) {
-      //   window.location.href = "/";
-      // }
+      console.log(response)
 
       // Definir mensagem de sucesso
       setFormState((prevState) => ({

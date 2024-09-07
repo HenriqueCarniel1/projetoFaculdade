@@ -10,11 +10,11 @@ import { MdLocalOffer } from 'react-icons/md'
 import { BiSolidOffer } from 'react-icons/bi'
 import { GiLaurelsTrophy } from 'react-icons/gi'
 //imports states
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 //import components
-import Mainbar from "./mainbard";
-import Login from "./login";
+import MenuDeOfertas from "./menuofertas";
+import LinkLogin from "./linklogin";
 
 interface Tipagem {
     Open: boolean
@@ -61,7 +61,7 @@ let Header = () => {
                     <div className="login" onMouseOver={HandleMouseOpen} onMouseOut={HandlleMouseOff}>
                         <i><RiAccountPinCircleFill /><p className="P-login">Login</p></i>
                         {
-                            OpenLogin && <Login on={HandleMouseOpen} off={HandlleMouseOff} />
+                            OpenLogin && <LinkLogin on={HandleMouseOpen} off={HandlleMouseOff} />
                         }
                     </div>
 
@@ -87,7 +87,7 @@ let Header = () => {
             </header>
             {
                 open &&
-                <Mainbar />
+                <MenuDeOfertas />
             }
         </div>
     )

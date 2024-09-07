@@ -5,7 +5,7 @@ interface LoginOpenOfProps {
     off: () => void
 }
 
-function Login({ on, off }: LoginOpenOfProps) {
+function LinkLogin({ on, off }: LoginOpenOfProps) {
     return (
         <div onMouseOver={on} onMouseOut={off}>
             <div className="fazer-login">
@@ -15,4 +15,4 @@ function Login({ on, off }: LoginOpenOfProps) {
     );
 }
 
-export default Login;
+export default LinkLogin;
