@@ -1,0 +1,33 @@
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+}
+.carrinho {
+    font-size: 22px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 12px;
+    padding: 10px;
+}
+.container5 {
+    display: grid;
+    place-items: center;
+    background-color: #e2dada;
+    padding: 70px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 13rem;
+}
+.subtitulo {
+    font-size: 18px;
+}
