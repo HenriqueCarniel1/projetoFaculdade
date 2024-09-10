@@ -70,7 +70,7 @@ let Header = () => {
 
                     <div className="carrinho">
                         <a href="/carrinho">
-                            <i><FaShoppingCart /><p className="P-carrinho">Carrinho</p></i>
+                            <i><FaShoppingCart /><p>Carrinho</p></i>
                         </a>
                     </div>
 

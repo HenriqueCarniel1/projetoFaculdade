@@ -16,6 +16,7 @@
     font-size: 20px;
     margin-top: 12px;
     padding: 10px;
+    cursor: pointer;
 }
 .container5 {
     display: grid;

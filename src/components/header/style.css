@@ -2,32 +2,34 @@
     margin: 0;
     padding: 0;
 }
+
 .login {
     position: relative;
     z-index: 1;
 }
+
 .header-menu {
     background-color: rgb(76, 119, 198);
     padding: 10px;
     padding-top: 5px;
     font-size: 20px;
-
 }
+
 .logo {
     width: 100px;
     height: 100px;
 }
+
 .imglogo {
     width: 100px;
     height: 100px;
 }
+
 .navbar {
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 }
 
 #busca {
@@ -43,7 +45,6 @@
     display: flex;
     width: 30%;
     align-items: center;
-
 }
 
 .botaoHeader {
@@ -67,48 +68,48 @@
 
 .menu ul li {
     display: flex;
-    align-items: self-start;
-
+    align-items: center;
 }
 
 .menu ul li i {
     margin: 2px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
 }
 
 .login i {
     display: flex;
-    align-items: self-start;
+    align-items: center;
     text-align: center;
+    margin-right: 8px;
 }
 
 .carrinho i {
     display: flex;
-    align-items: self-start;
+    align-items: center;
     text-align: center;
     color: black;
+    margin-right: 8px;
 }
-
-.P-carrinho {
-    margin-left: 0.3em;
-} 
 
 @media screen and (max-width: 1000px) {
     .menu {
         display: none;
-    }   
+    }
 
-    .P-login{
+    .P-login {
         display: none;
         padding: 10px;
     }
 
-    .P-carrinho{
+    .P-carrinho {
         display: none;
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .Main-bar{
+    .Main-bar {
         display: none;
     }
 }
