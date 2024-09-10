@@ -37,7 +37,7 @@ O Econobusca combina a acessibilidade do **GetNinjas** com a especialização da
 ### Backend
 
 - **Tecnologias**: Node.js, Express, MySQL
-- **GitHub**: [Clique aqui](https://github.com/HenriqueCarniell/Econobusca-Backend)
+- **GitHub**: [Clique aqui](https://github.com/HenriqueCarniel1/API-projetoFaculdade)
 
 **Segurança**: Implementação robusta com tokens de autenticação de usuários e criptografia de senhas, garantindo privacidade e integridade dos dados.
 
@@ -104,7 +104,7 @@ http://localhost:3000
 ## 📚 Documentação
 
 - [Documentação do Backend](https://github.com/HenriqueCarniell/Econobusca-Backend)
-- [Figma Mobile](https://www.figma.com/file/dd3whEP3)
-- [Figma Web](https://www.figma.com/file/db_NRW9f)
+- [Figma Mobile](https://www.figma.com/proto/eQqZ1iKfYeg6Q6GRKXvxs3/Untitled?node-id=236-65&node-type=FRAME&t=zHXyDM2ZRTMCRoMO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A107)
+- [Figma Web](https://www.figma.com/proto/eQqZ1iKfYeg6Q6GRKXvxs3/Untitled?node-id=9-107&node-type=CANVAS&t=lzWKkOWByfnmu8AM-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A107)
 
 ---
