@@ -12,6 +12,9 @@ import { GiLaurelsTrophy } from 'react-icons/gi'
 //imports states
 import { useState } from 'react'
 
+//logo
+import Logo from '../../img/logo.png'
+
 //import components
 import MenuDeOfertas from "./menuofertas";
 import LinkLogin from "./linklogin";
@@ -50,12 +53,12 @@ let Header = () => {
                 <div className="navbar">
                     
                     <div className="logo">
-                        <img src="" alt="" className="imglogo" />
+                        <img src={Logo} alt="" className="imglogo" />
                     </div>
 
                     <div className="pesquisa">
                         <input type="text" id="busca" name="busca" />
-                        <button className="botaoHeader" ><i><BiSearchAlt2 /></i></button>
+                        <button className="botaoHeader" ><i><BiSearchAlt2 size={"20"} /></i></button>
                     </div>
 
                     <div className="login" onMouseOver={HandleMouseOpen} onMouseOut={HandlleMouseOff}>
@@ -78,10 +81,10 @@ let Header = () => {
 
                 <div className="menu">
                     <ul>
-                        <li><i><GiHamburgerMenu /></i>Categoria</li>
-                        <li><i><MdLocalOffer /></i>Ofertas</li>
-                        <li><i><GiLaurelsTrophy /></i>Mais Vendidos</li>
-                        <li><i><BiSolidOffer /></i>Cupons</li>
+                        <li><i><GiHamburgerMenu size={"25"}/></i>Categoria</li>
+                        <li><i><MdLocalOffer size={"25"} /></i>Ofertas</li>
+                        <li><i><GiLaurelsTrophy size={"25"} /></i>Mais Vendidos</li>
+                        <li><i><BiSolidOffer size={"25"} /></i>Cupons</li>
                     </ul>
                 </div>
             </header>
