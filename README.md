@@ -37,7 +37,7 @@ O Econobusca combina a acessibilidade do **GetNinjas** com a especialização da
 ### Backend
 
 - **Tecnologias**: Node.js, Express, MySQL
-- **GitHub**: [Clique aqui](https://github.com/HenriqueCarniell/Econobusca-Backend)
+- **GitHub**: [Clique aqui](https://github.com/HenriqueCarniel1/API-projetoFaculdade)
 
 **Segurança**: Implementação robusta com tokens de autenticação de usuários e criptografia de senhas, garantindo privacidade e integridade dos dados.
 
