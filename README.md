@@ -80,7 +80,7 @@ O **Econobusca** tem o potencial de transformar o mercado local, oferecendo uma 
 1. Clone este repositório:
 
 ```bash
-https://github.com/HenriqueCarniel1/projetoFaculdade.git
+git clone https://github.com/HenriqueCarniel1/projetoFaculdade.git
 ```
 
 2. Instale as dependências do projeto:
