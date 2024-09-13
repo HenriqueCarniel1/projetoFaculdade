@@ -1,4 +1,3 @@
-
 .fazer-login {
     position: absolute;
     z-index: 999;
@@ -8,7 +7,7 @@
     border-radius: 8px;
 }
 
-.fazer-login a{
+.fazer-login a {
     font-size: 17px;
     color: black;
 }

@@ -5,6 +5,7 @@
     height: 60vh;
     text-align: center;
 }
+
 .carrinho {
     font-size: 22px;
 }
@@ -18,6 +19,7 @@
     padding: 10px;
     cursor: pointer;
 }
+
 .container5 {
     display: grid;
     place-items: center;
@@ -29,6 +31,7 @@
     text-align: center;
     height: 13rem;
 }
+
 .subtitulo {
     font-size: 18px;
 }

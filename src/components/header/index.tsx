@@ -25,23 +25,18 @@ interface Tipagem {
 }
 
 let Header = () => {
-    // State que armazena informações da tela de informações para tablets e celulares
     const [open, setOpen] = useState<Tipagem['Open']>(false)
 
-    // State que armazena informações para abrir e fechar a tela de login
     const [OpenLogin, setOpenLogin] = useState<Tipagem['OpenLogin']>(false)
 
-    // Função para abrir uma barra para quem está no celular/ tablet
     let abrirNav = () => {
         setOpen(!open)
         console.log(open)
     }
-    // função que abre a tela para login
     let HandleMouseOpen = () => {
         setOpenLogin(true)
         console.log(OpenLogin)
     }
-    // função que fecha a tela de login
     let HandlleMouseOff = () => {
         setOpenLogin(false)
         console.log(OpenLogin)
@@ -51,7 +46,7 @@ let Header = () => {
         <div>
             <header className="header-menu">
                 <div className="navbar">
-                    
+
                     <div className="logo">
                         <img src={Logo} alt="" className="imglogo" />
                     </div>
@@ -81,7 +76,7 @@ let Header = () => {
 
                 <div className="menu">
                     <ul>
-                        <li><i><GiHamburgerMenu size={"25"}/></i>Categoria</li>
+                        <li><i><GiHamburgerMenu size={"25"} /></i>Categoria</li>
                         <li><i><MdLocalOffer size={"25"} /></i>Ofertas</li>
                         <li><i><GiLaurelsTrophy size={"25"} /></i>Mais Vendidos</li>
                         <li><i><BiSolidOffer size={"25"} /></i>Cupons</li>

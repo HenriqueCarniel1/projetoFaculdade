@@ -1,9 +1,8 @@
 import "./style.css";
 import axios from "axios";
 import React, { useState, FormEvent } from "react";
-import "./style.css";
+import { useNavigate } from "react-router-dom";
 
-// Define os tipos para o estado do componente
 interface FormLoginState {
   email: string;
   password: string;
@@ -13,7 +12,6 @@ interface FormLoginState {
 }
 
 function FormLogin() {
-  // Define o estado do componente com a tipagem FormLoginState
   const [formState, setFormState] = useState<FormLoginState>({
     email: "",
     password: "",
@@ -22,11 +20,13 @@ function FormLogin() {
     message: ""
   });
 
-  // Função para validar o formulário
+  const [loading, setLoading] = useState<boolean>(false);
+
+  const navigate = useNavigate();
+
   const validateForm = (): boolean => {
     let isValid = true;
 
-    // Validação do email
     if (!formState.email.includes("@") || !formState.email.includes(".")) {
       setFormState((prevState) => ({
         ...prevState,
@@ -40,7 +40,6 @@ function FormLogin() {
       }));
     }
 
-    // Validação da senha
     if (formState.password.length < 6) {
       setFormState((prevState) => ({
         ...prevState,
@@ -57,37 +56,37 @@ function FormLogin() {
     return isValid;
   };
 
-  // Função para lidar com o envio do formulário
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    // Validar o formulário antes de enviar
     if (!validateForm()) return;
 
+    setLoading(true);
+
     try {
-      // Enviar os dados para o backend
       const response = await axios.post("https://api-projetofaculdade.onrender.com/send/login/user", {
         LoginEmail: formState.email,
         LoginPassword: formState.password
       });
 
-      console.log(response)
-
-      // Definir mensagem de sucesso
-      setFormState((prevState) => ({
-        ...prevState,
-        message: "Login bem-sucedido!",
-      }));
+      if (response.data.logado) {
+        navigate("/");
+      } else {
+        setFormState((prevState) => ({
+          ...prevState,
+          message: response.data.user || "Email ou senha incorretos",
+        }));
+      }
     } catch (error) {
-      // Definir mensagem de erro
       setFormState((prevState) => ({
         ...prevState,
         message: "Falha no login, por favor tente novamente.",
       }));
+    } finally {
+      setLoading(false);
     }
   };
 
-  // Função para atualizar o estado dos campos
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormState((prevState) => ({
@@ -130,13 +129,21 @@ function FormLogin() {
             </p>
           </div>
           <div id="mensagem-certo">
-            <p style={{ color: 'green' }}>{formState.message}</p>
+            <p style={{ color: formState.message.includes("incorretos") || formState.message.includes("Falha") ? 'red' : 'green' }}>
+              {formState.message}
+            </p>
           </div>
           <div id="criarconta-div-input">
             <a href='/formcreatelogin'>Criar conta</a>
           </div>
           <div id="botao-div">
-            <button type="submit" id="botao">Enviar</button>
+            <button type="submit" id="botao" className="btn btn-primary" disabled={loading}>
+              {loading ? (
+                <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              ) : (
+                "Enviar"
+              )}
+            </button>
           </div>
         </form>
       </div>
