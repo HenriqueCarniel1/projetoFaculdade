@@ -2,16 +2,30 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 4em 2em;
 
 
 }
 
 .card {
-    width: 10rem;
+    width: 12rem;
+    margin: 1em;
+    box-shadow: 1px 0px 19px 1px rgba(0, 0, 0, 0.16);;
+    -webkit-box-shadow: 1px 0px 19px 1px rgba(0, 0, 0, 0.16);;
+    -moz-box-shadow: 1px 0px 19px 1px rgba(0, 0, 0, 0.16);;
 }
 
 .icons {
     display: flex;
     padding: 5px;
     justify-content: end;
+    font-size: 1.2rem;
+}
+
+.botaoComprar {
+    width: 100%;
+    transition: .4s;
+}
+.botaoComprar:hover {
+    transform: scale(1.02);
 }
