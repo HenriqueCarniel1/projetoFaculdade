@@ -1,0 +1,17 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.card {
+    width: 10rem;
+}
+
+.icons {
+    display: flex;
+    padding: 5px;
+    justify-content: end;
+}
