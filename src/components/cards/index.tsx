@@ -7,10 +7,13 @@ import { FaHeart } from "react-icons/fa";
 import './style.css'
 
 interface Prop {
+
     idproduto: string,
     data_de_entrega: string,
     descricao: string,
-    nome: string
+    nome: string,
+    imagem: string;
+    preco: number
 }
 
 function Cards() {
@@ -38,9 +41,12 @@ function Cards() {
                         <IoMdCart />
                         <FaHeart />
                     </div>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                    <Card.Img variant="top" src={dados.imagem} />
                     <Card.Body>
                         <Card.Title>{dados.nome}</Card.Title>
+                        <Card.Text>
+                            R$: {dados.preco}
+                        </Card.Text>
                         <Card.Text>
                             {dados.descricao}
                         </Card.Text>

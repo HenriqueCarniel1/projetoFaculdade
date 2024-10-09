@@ -1,31 +1,72 @@
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 4em 2em;
-
-
+    gap: 2em;
 }
 
 .card {
-    width: 12rem;
+    width: 15rem;
     margin: 1em;
-    box-shadow: 1px 0px 19px 1px rgba(0, 0, 0, 0.16);;
-    -webkit-box-shadow: 1px 0px 19px 1px rgba(0, 0, 0, 0.16);;
-    -moz-box-shadow: 1px 0px 19px 1px rgba(0, 0, 0, 0.16);;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 0px 19px 1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 0px 24px 2px rgba(0, 0, 0, 0.25);
 }
 
 .icons {
     display: flex;
-    padding: 5px;
     justify-content: end;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.icons svg {
+    cursor: pointer;
+    color: #fa62a1;
+    transition: color 0.3s;
+}
+
+.icons svg:hover {
+    color: #ff85c0;
+}
+
+.card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title {
     font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
 }
 
 .botaoComprar {
     width: 100%;
-    transition: .4s;
+    background-color: #fa62a1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: transform 0.4s, background-color 0.4s;
 }
+
 .botaoComprar:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
+    background-color: #ff85c0;
 }
