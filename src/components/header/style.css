@@ -34,7 +34,7 @@
 
 #busca {
     width: 100%;
-    height: 20px;
+    height: 40px !important;
     padding: 10px;
     border: white;
     border-top-left-radius: 8px;
