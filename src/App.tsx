@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/carrinho" element={<Carrinho/>} />
         <Route path="/vendedor" element={<Vendedor/>} />
-        <Route path="/produtoUnico" element={<ProdutoUnico/>} />
+        <Route path="/produtoUnico/:idProduto" element={<ProdutoUnico/>} />
       </Routes>
     </BrowserRouter>
   );

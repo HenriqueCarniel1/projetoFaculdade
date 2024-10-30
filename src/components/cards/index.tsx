@@ -5,6 +5,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { IoMdCart } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import './style.css';
+import { Link, useParams } from 'react-router-dom';
 
 interface Prop {
     idproduto: string;
@@ -16,11 +17,16 @@ interface Prop {
 }
 
 function Cards() {
+
+    const { idProduto } = useParams<{ idProduto: string }>();
+    const idProdutoNumber = idProduto ? parseInt(idProduto, 10) : null;
+    
+
     const [dados, setDados] = useState<Prop[]>([]);
 
     const fetchData = useCallback(async () => {
         try {
-            const response = await axios.get('https://api-projetofaculdade.onrender.com/get/produto');
+            const response = await axios.get('http://localhost:3000/get/produto');
             setDados(prevData => {
                 if (JSON.stringify(prevData) !== JSON.stringify(response.data)) {
                     return response.data;
@@ -49,7 +55,9 @@ function Cards() {
                         <Card.Title>{item.nome}</Card.Title>
                         <Card.Text>R$: {item.preco}</Card.Text>
                         <Card.Text>{item.descricao}</Card.Text>
-                        <Button className='botaoComprar' variant="dark">Comprar</Button>
+                        <Link to={`/produtoUnico/${item.idproduto}`}>
+                            <Button className='botaoComprar' variant="dark">Comprar</Button>
+                        </Link>
                     </Card.Body>
                 </Card>
             ))}
