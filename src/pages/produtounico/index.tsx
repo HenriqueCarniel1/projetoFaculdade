@@ -66,7 +66,7 @@ const ProdutoUnico: React.FC = () => {
     useEffect(() => {
         const fetchProductData = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/get/produto/unico/${idProduto}`);
+                const response = await axios.get(`https://api-projetofaculdade.onrender.com/get/produto/unico/${idProduto}`);
                 setProduto(response.data);
             } catch (error) {
                 console.error("Erro ao buscar dados do produto:", error);
