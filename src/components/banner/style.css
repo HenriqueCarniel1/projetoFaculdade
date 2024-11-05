@@ -1,9 +1,8 @@
 .carousel-container {
     width: 100%;
-    height: 500px;
+    height: 20rem;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -17,7 +16,6 @@
     min-width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 
@@ -55,9 +53,11 @@
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
+    
 }
 
 .carousel-indicators button {
+    display: none;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -69,6 +69,7 @@
 
 .carousel-indicators button.active {
     background-color: rgba(255, 255, 255, 1);
+
 }
 
 .carousel-indicators button:hover {
