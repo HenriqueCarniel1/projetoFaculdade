@@ -11,6 +11,7 @@ import Logo from '../../img/logo.png';
 import MenuDeOfertas from "./menuofertas";
 import LinkLogin from "./linklogin";
 import Filtros from '../filtros';
+import { } from 'react-router-dom'
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -25,8 +26,11 @@ const Header = () => {
       <header className="header-menu">
         <div className="navbar">
           <div className="logo">
-            <img src={Logo} alt="logo" className="imglogo" />
+            <a href="/">
+              <img src={Logo} alt="logo" className="imglogo" />
+            </a>
           </div>
+
 
           <div className="pesquisa">
             <input type="text" id="busca" name="busca" placeholder="Buscar produtos..." />
@@ -57,7 +61,7 @@ const Header = () => {
           </ul>
         </div>
       </header>
-      
+
       <Filtros />
     </div>
   );
