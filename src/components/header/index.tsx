@@ -8,10 +8,8 @@ import { MdLocalOffer } from 'react-icons/md';
 import { BiSolidOffer } from 'react-icons/bi';
 import { GiLaurelsTrophy } from 'react-icons/gi';
 import Logo from '../../img/logo.png';
-import MenuDeOfertas from "./menuofertas";
 import LinkLogin from "./linklogin";
 import Filtros from '../filtros';
-import { } from 'react-router-dom'
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -28,14 +26,18 @@ const Header = () => {
           <div className="logo">
             <a href="/">
               <img src={Logo} alt="logo" className="imglogo" />
+              <p style={{color: 'black'}}>LOGO</p>
             </a>
           </div>
 
 
           <div className="pesquisa">
             <input type="text" id="busca" name="busca" placeholder="Buscar produtos..." />
-            <button className="botaoHeader"><BiSearchAlt2 size={"20"} /></button>
+            <button className="botaoHeader">
+              <BiSearchAlt2 size="20" />
+            </button>
           </div>
+
 
           <div className="login" onMouseOver={handleMouseOpen} onMouseOut={handleMouseOff}>
             <RiAccountPinCircleFill /><p className="P-login">Login</p>

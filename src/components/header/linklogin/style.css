@@ -1,13 +1,31 @@
 .fazer-login {
     position: absolute;
     z-index: 999;
-    width: 7rem;
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
+    width: 10rem;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none; 
 }
 
 .fazer-login a {
-    font-size: 17px;
-    color: black;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.fazer-login a:hover {
+    color: #007bff;
+}
+
+div:hover .fazer-login {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }

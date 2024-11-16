@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.P-login {
+    padding: 20px 20px 20px 0px;
+}
+
 .login {
     display: flex;
     align-items: baseline;
@@ -41,7 +45,10 @@
     border: white;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
+
 
 .pesquisa {
     display: flex;

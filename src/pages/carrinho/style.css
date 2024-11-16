@@ -1,9 +1,78 @@
 .container1 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    min-height: 60vh;
     text-align: center;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.card-content h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.button-delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-delete:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.button-delete:active {
+    background-color: #a71d2a;
+    transform: scale(0.95);
+}
+
+
+.card-content p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.9em;
 }
 
 .carrinho {
@@ -16,21 +85,29 @@
     border-radius: 10px;
     font-size: 20px;
     margin-top: 12px;
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
 
 .container5 {
-    display: grid;
-    place-items: center;
-    background-color: #e2dada;
-    padding: 70px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #e2dada;
+    padding: 50px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .subtitulo {
     font-size: 18px;
+    margin-top: 10px;
+    color: #666;
 }
