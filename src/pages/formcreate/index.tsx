@@ -67,91 +67,88 @@ function FormCreate() {
     };
 
     return (
-        <div id="container-login">
-            <div id="container-form">
-                <div id="titulo-div-input">
+        <div className="div-form-cadastro">
+            <form className="form-cadastro" onSubmit={handleSubmit}>
+                <div className="div-form-cadastro-title">
                     <h1>Cadastro</h1>
                 </div>
-                <form className="formCreate" onSubmit={handleSubmit}>
-                    <div id="nome-div-input">
-                        <label>Nome:</label>
-                        <input
-                            type="text"
-                            name="nome"
-                            placeholder="Digite seu nome"
-                            value={formData.nome}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div id="email-div-input">
-                        <label>Email:</label>
-                        <input
-                            type="text"
-                            name="email"
-                            placeholder="Digite um email"
-                            value={formData.email}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div id="criar-senha-div-input">
-                        <label>Criar senha:</label>
-                        <input
-                            type="password"
-                            name="senha"
-                            placeholder="Crie sua senha"
-                            value={formData.senha}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div id="confirmar-senha-div-input">
-                        <label>Confirme sua senha:</label>
-                        <input
-                            type="password"
-                            name="confirmarSenha"
-                            placeholder="Confirme sua senha"
-                            value={formData.confirmarSenha}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div id="telefone-div-input">
-                        <label>Telefone:</label>
-                        <input
-                            type="text"
-                            name="telefone"
-                            placeholder="Digite seu número de telefone"
-                            value={formData.telefone}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div id="cpf-div-input">
-                        <label>CPF:</label>
-                        <input
-                            type="text"
-                            name="cpf"
-                            placeholder="Digite seu CPF"
-                            value={formData.cpf}
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div id="data-nascimento-div-input">
-                        <label>Data de Nascimento:</label>
-                        <input
-                            type="date"
-                            name="dataNascimento"
-                            placeholder="Digite sua data de nascimento"
-                            value={formData.dataNascimento}
-                            onChange={handleChange}
-                        />
-                    </div>
-
-                    {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-
-                    <div id="botao-div">
-                        <button id="botao" type="submit">Criar conta</button>
-                    </div>
-                </form>
-            </div>
+                <div className="mb-3">
+                    <label>Nome:</label>
+                    <input
+                        type="text"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        value={formData.nome}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="mb-3">
+                    <label>Email:</label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Digite um email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="mb-3">
+                    <label>Criar senha:</label>
+                    <input
+                        type="password"
+                        name="senha"
+                        placeholder="Crie sua senha"
+                        value={formData.senha}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="mb-3">
+                    <label>Confirme sua senha:</label>
+                    <input
+                        type="password"
+                        name="confirmarSenha"
+                        placeholder="Confirme sua senha"
+                        value={formData.confirmarSenha}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="mb-3">
+                    <label>Telefone:</label>
+                    <input
+                        type="text"
+                        name="telefone"
+                        placeholder="Digite seu número de telefone"
+                        value={formData.telefone}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="mb-3">
+                    <label>CPF:</label>
+                    <input
+                        type="text"
+                        name="cpf"
+                        placeholder="Digite seu CPF"
+                        value={formData.cpf}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className="mb-3">
+                    <label>Data de Nascimento:</label>
+                    <input
+                        type="date"
+                        name="dataNascimento"
+                        placeholder="Digite sua data de nascimento"
+                        value={formData.dataNascimento}
+                        onChange={handleChange}
+                    />
+                </div>
+                {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+                <div id="botao-div">
+                    <button id="botao" className="btn btn-primary w-100">Criar conta</button>
+                </div>
+            </form>
         </div>
+
     );
 }
 

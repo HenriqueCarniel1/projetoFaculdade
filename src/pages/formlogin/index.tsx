@@ -98,48 +98,49 @@ function FormLogin() {
   };
 
   return (
-    <div id="container-login">
-  <div id="container-form">
-    <div id="titulo-div-input">
+<div className="div-form-login">
+  <form className="form-login" onSubmit={handleSubmit}>
+    <div className="div-form-login-title">
       <h1>Login</h1>
     </div>
-    <form onSubmit={handleSubmit}>
-      <div id="email-div-input">
-        <label>Email:</label>
-        <input
-          type="text"
-          name="email"
-          placeholder="Digite um email"
-          value={formState.email}
-          onChange={handleChange}
-        />
-        <p id="emailverificated">{formState.emailError}</p>
-      </div>
-      <div id="senha-div-input">
-        <label>Senha:</label>
-        <input
-          type="password"
-          name="password"
-          placeholder="Digite uma senha"
-          value={formState.password}
-          onChange={handleChange}
-        />
-        <p id="senhaverificated">{formState.passwordError}</p>
-      </div>
-      <div id="mensagem-certo">
-        <p>{formState.message}</p>
-      </div>
-      <div id="criarconta-div-input">
-        <a href="/formcreatelogin">Criar conta</a>
-      </div>
-      <div id="botao-div">
-        <button type="submit" id="botao" disabled={loading}>
-          {loading ? "Carregando..." : "Enviar"}
-        </button>
-      </div>
-    </form>
-  </div>
+    <div className="mb-3">
+      <label>Email:</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Digite um email"
+        value={formState.email}
+        onChange={handleChange}
+        disabled={loading}
+      />
+      <p className="text-muted">{formState.emailError}</p>
+    </div>
+    <div className="mb-3">
+      <label>Senha:</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="Digite uma senha"
+        value={formState.password}
+        onChange={handleChange}
+        disabled={loading}
+      />
+      <p className="text-muted">{formState.passwordError}</p>
+    </div>
+    <p className="text-muted">{formState.message}</p>
+    <p>Não possui uma conta? <a href="/formcreatelogin">Crie Uma</a></p>
+    <div className="div-botao-login">
+      <button type="submit" disabled={loading}>
+        {loading ? (
+          <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        ) : (
+          "Enviar"
+        )}
+      </button>
+    </div>
+  </form>
 </div>
+
 
   );
 }

@@ -1,68 +1,64 @@
-#container-login {
-    display: flex;
+.div-form-cadastro {
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-#container-form {
-    background-color: white;
-    width: 20rem;
-    padding: 20px;
+  }
+  
+  .div-form-cadastro-title {
+    text-align: center;
+  }
+  
+  .form-cadastro {
+    width: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-}
-
-#mensagem-certo {
-    display: flex;
-    justify-content: center;
-}
-
-#mensagem-certo p {
-    color: green;
-}
-
-label {
-    font-size: 18px;
-}
-
-input {
-    width: 95%;
-    border: 3px solid black;
-    padding: 7px;
-}
-
-#criarconta-div-input {
-    display: flex;
-    justify-content: end;
+  }
+  
+  .mb-3 {
+    margin-bottom: 1rem;
+  }
+  
+  .mb-3 label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
     margin-bottom: 0.5rem;
-}
-
-#botao {
+  }
+  
+  .mb-3 input {
     width: 100%;
-    background-color: rgb(76, 119, 198);
-    border: none;
-    padding: 8px;
-    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .mb-3 input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .div-botao-cadastro {
+    text-align: center;
+  }
+  
+  .div-botao-cadastro button {
+    width: 100%;
+    background-color: #007bff;
     color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
     cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-}
-
-#botao-div {
-    display: flex;
-    justify-content: center;
-}
-
-#titulo-div-input {
-    display: flex;
-    justify-content: center;
-}
-
-.formCreate div {
-    margin-bottom: 0.7rem;
-}
+  }
+  
+  .div-botao-cadastro button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
